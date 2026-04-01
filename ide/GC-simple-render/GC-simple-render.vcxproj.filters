@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+            <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{93995380-89BD-4B04-88EB-625FBE52EBFB}</UniqueIdentifier>
+            <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+        </Filter>
+        <Filter Include="Images">
+            <UniqueIdentifier>{6E901252-3135-5382-5769-143D295A57A6}</UniqueIdentifier>
+            <Extensions>png;jpg;jpeg;dds;bmp;tif;tiff;gif;ico;svg</Extensions>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{67DA6AB6-F800-4C08-8B7A-83BB121AAD01}</UniqueIdentifier>
+            <Extensions>rc;cur;dlg;rc2;rct;bin;rgs;resx;wav;mfcribbon-ms</Extensions>
+        </Filter>
+    </ItemGroup>
+    <ItemGroup>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Aliases.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Camera.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\DriverPriority.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\GCSR.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Geometries\Geometries.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Geometries\Geometry.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Inputs\InputsEnums.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Inputs\InputsMethods.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Inputs\InputSystem.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Light.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Renderer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\ShadowMap.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Text.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Texture.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Transform.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Window.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Camera.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Geometries\Geometry.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Inputs\InputsMethods.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Inputs\InputSystem.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Light.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Renderer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\ShadowMap.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Window.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+</Project>

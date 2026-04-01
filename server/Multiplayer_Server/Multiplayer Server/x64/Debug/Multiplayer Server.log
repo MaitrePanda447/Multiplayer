@@ -1,0 +1,4 @@
+﻿  Multiplayer Server.cpp
+C:\Users\quent\Documents\cours\multijoueurs\projet\bor-2-atari-s2p1-01\server\Multiplayer_Server\Multiplayer Server\Multiplayer Server.cpp(371,45): warning C4244: '=' : conversion de 'uint64_t' en 'uint32_t', perte possible de données
+  LINK : C:\Users\quent\Documents\cours\multijoueurs\projet\bor-2-atari-s2p1-01\server\Multiplayer_Server\x64\Debug\Multiplayer Server.exe introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
+  Multiplayer Server.vcxproj -> C:\Users\quent\Documents\cours\multijoueurs\projet\bor-2-atari-s2p1-01\server\Multiplayer_Server\x64\Debug\Multiplayer Server.exe

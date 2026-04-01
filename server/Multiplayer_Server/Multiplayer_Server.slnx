@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Multiplayer Server/Multiplayer Server.vcxproj" Id="0ff81d6b-1e7d-4367-acd8-6bf9308b80e4" />
+</Solution>

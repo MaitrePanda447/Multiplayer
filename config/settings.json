@@ -1,0 +1,46 @@
+{
+    "projects": {
+        "GC-simple-render": {
+            "additionalDependencies": [
+                "GCE.lib"
+            ],
+            "additionalIncludeDirectories": [
+                "$(SolutionDir)../vendor/GCE/include/"
+            ],
+            "additionalLibraryDirectories": [
+                "$(SolutionDir)../vendor/GCE/lib/"
+            ],
+            "dependencies": [],
+            "dependents": [
+                "Sandbox"
+            ],
+            "guid": "38F75103-529A-3190-66A6-19F06F252E3F",
+            "lib": true,
+            "pch": false,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": false
+        },
+        "Sandbox": {
+            "additionalDependencies": ["Ws2_32.lib"],
+            "additionalLibraryDirectories": [],
+            "additionalIncludeDirectories": [
+                "$(SolutionDir)../vendor/GCE/include/"
+            ],
+            "dependencies": [
+                "GC-simple-render"
+            ],
+            "dependents": [],
+            "guid": "6D3365EA-0685-67A6-11D8-272C75644253",
+            "lib": false,
+            "pch": false,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": false
+        }
+    },
+    "solution_guid": "6B045A50-69CF-1E1C-2808-683D565F65A7",
+    "solution_name": "GCSimpleRender",
+    "startup_project": "Sandbox",
+    "version": "1.17.4"
+}

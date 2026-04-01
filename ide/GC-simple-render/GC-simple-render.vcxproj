@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup Label="ProjectConfigurations">
+        <ProjectConfiguration Include="Debug|Win32">
+            <Configuration>Debug</Configuration>
+            <Platform>Win32</Platform>
+        </ProjectConfiguration>
+        <ProjectConfiguration Include="Release|Win32">
+            <Configuration>Release</Configuration>
+            <Platform>Win32</Platform>
+        </ProjectConfiguration>
+        <ProjectConfiguration Include="Debug|x64">
+            <Configuration>Debug</Configuration>
+            <Platform>x64</Platform>
+        </ProjectConfiguration>
+        <ProjectConfiguration Include="Release|x64">
+            <Configuration>Release</Configuration>
+            <Platform>x64</Platform>
+        </ProjectConfiguration>
+    </ItemGroup>
+    <PropertyGroup Label="Globals">
+        <Keyword>Win32Proj</Keyword>
+        <ProjectGuid>{38F75103-529A-3190-66A6-19F06F252E3F}</ProjectGuid>
+        <RootNamespace>MonProjet1</RootNamespace>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+    <PropertyGroup Label="Configuration">
+        <ConfigurationType>StaticLibrary</ConfigurationType>
+        <UseDebugLibraries Condition="'$(Configuration)'=='Debug'">true</UseDebugLibraries>
+        <UseDebugLibraries Condition="'$(Configuration)'=='Release'">false</UseDebugLibraries>
+        <PlatformToolset>v143</PlatformToolset>
+        <WholeProgramOptimization Condition="'$(Configuration)'=='Release'">true</WholeProgramOptimization>
+        <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+    <ImportGroup Label="ExtensionSettings">
+    </ImportGroup>
+    <ImportGroup Label="Shared">
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets">
+        <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+        <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+        <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\intermediate\</IntDir>
+    </PropertyGroup>
+    <PropertyGroup Label="Vcpkg">
+        <VcpkgEnabled>false</VcpkgEnabled>
+        <VcpkgEnableManifest>false</VcpkgEnableManifest>
+        <VcpkgManifestRoot>$(SolutionDir)..\config\GC-simple-render</VcpkgManifestRoot>
+        <VcpkgInstalledDir>$(SolutionDir)\vcpkg_installed\$(VcpkgTriplet)</VcpkgInstalledDir>
+    </PropertyGroup>
+    <ItemDefinitionGroup>
+        <ClCompile>
+            <WarningLevel>Level3</WarningLevel>
+            <FunctionLevelLinking Condition="'$(Configuration)'=='Release'">true</FunctionLevelLinking>
+            <IntrinsicFunctions Condition="'$(Configuration)'=='Release'">true</IntrinsicFunctions>
+            <SDLCheck>true</SDLCheck>
+            <PreprocessorDefinitions Condition="'$(Configuration)'=='Debug'">_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <PreprocessorDefinitions Condition="'$(Configuration)'=='Release'">NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <ConformanceMode>true</ConformanceMode>
+            <LanguageStandard>stdcpp20</LanguageStandard>
+            <PrecompiledHeader>NotUsing</PrecompiledHeader>
+            <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\GC-simple-render;$(SolutionDir)../vendor/GCE/include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+            <MultiProcessorCompilation>true</MultiProcessorCompilation>
+        </ClCompile>
+        <Link>
+            <SubSystem>Console</SubSystem>
+            <EnableCOMDATFolding Condition="'$(Configuration)'=='Release'">true</EnableCOMDATFolding>
+            <OptimizeReferences Condition="'$(Configuration)'=='Release'">true</OptimizeReferences>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+            <AdditionalLibraryDirectories>$(SolutionDir)../vendor/GCE/lib/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>GCE.lib;%(AdditionalDependencies)</AdditionalDependencies>
+        </Link>
+        <FxCompile>
+            <ObjectFileOutput>$(SolutionDir)../res/Render/Shaders/%(Filename).cso</ObjectFileOutput>
+            <ShaderModel>6.0</ShaderModel>
+        </FxCompile>
+        <Lib>
+            <AdditionalLibraryDirectories>$(SolutionDir)../vendor/GCE/lib/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>GCE.lib;%(AdditionalDependencies)</AdditionalDependencies>
+        </Lib>
+    </ItemDefinitionGroup>
+    <ItemGroup>
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Aliases.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Camera.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\DriverPriority.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\GCSR.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Geometries\Geometries.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Geometries\Geometry.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Inputs\InputsEnums.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Inputs\InputsMethods.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Inputs\InputSystem.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Light.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Renderer.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\ShadowMap.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Text.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Texture.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Transform.h" />
+        <ClInclude Include="$(SolutionDir)..\src\GC-simple-render\Window.h" />
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Camera.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Geometries\Geometry.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Inputs\InputsMethods.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Inputs\InputSystem.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Light.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Renderer.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\ShadowMap.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\GC-simple-render\Window.cpp" />
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+    <ImportGroup Label="ExtensionTargets">
+    </ImportGroup>
+</Project>

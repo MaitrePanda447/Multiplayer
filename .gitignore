@@ -1,0 +1,13 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/ide/.vs/GCSimpleRender/v18
+/server/Multiplayer_Server/.vs
+/ide/.github
+/ide/.vs
+/ide/GC-simple-render/x64/Debug
+/ide/Sandbox/x64/Debug/intermediate
+/server/Multiplayer_Server/Multiplayer Server/x64/Debug/Multipla.0ff81d6b.tlog
+external/glm/
+/.vs
